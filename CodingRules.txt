@@ -1,0 +1,21 @@
+1. IDS01-J. Normalize strings before validating them - 
+https://wiki.sei.cmu.edu/confluence/display/java/IDS01-J.+Normalize+strings+before+validating+them
+
+2. IDS06-J. Exclude unsanitized user input from format strings - https://wiki.sei.cmu.edu/confluence/display/java/IDS06-J.+Exclude+unsanitized+user+input+from+format+strings
+
+3. IDS16-J. Prevent XML Injection - https://wiki.sei.cmu.edu/confluence/display/java/IDS16-J.+Prevent+XML+Injection
+
+4. LCK01-J. Do not synchronize on objects that may be reused - https://wiki.sei.cmu.edu/confluence/display/java/LCK01-J.+Do+not+synchronize+on+objects+that+may+be+reused
+
+5. LCK11-J. Avoid client-side locking when using classes that do not commit to their locking strategy - 
+https://wiki.sei.cmu.edu/confluence/display/java/LCK11-J.+Avoid+client-side+locking+when+using+classes+that+do+not+commit+to+their+locking+strategy
+
+6. STR03-J. Do not encode noncharacter data as a string - https://wiki.sei.cmu.edu/confluence/display/java/STR03-J.+Do+not+encode+noncharacter+data+as+a+string
+
+7. MET01-J. Never use assertions to validate method arguments - https://wiki.sei.cmu.edu/confluence/display/java/MET01-J.+Never+use+assertions+to+validate+method+arguments
+
+8. MET07-J. Never declare a class method that hides a method declared in a superclass or superinterface - https://wiki.sei.cmu.edu/confluence/display/java/MET07-J.+Never+declare+a+class+method+that+hides+a+method+declared+in+a+superclass+or+superinterface
+
+9. ERR00-J. Do not suppress or ignore checked exceptions - http://wiki.sei.cmu.edu/confluence/display/java/ERR00-J.+Do+not+suppress+or+ignore+checked+exceptions
+
+10. ERR04-J. Do not complete abruptly from a finally block - https://wiki.sei.cmu.edu/confluence/display/java/ERR04-J.+Do+not+complete+abruptly+from+a+finally+block

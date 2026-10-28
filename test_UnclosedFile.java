@@ -1,0 +1,1 @@
+import java.io.*; public class UnclosedFile { public static void main(String[] args){ try{ FileReader fr=new FileReader("input.txt"); int c=fr.read(); System.out.println((char)c);}catch(Exception e){ e.printStackTrace();}}}

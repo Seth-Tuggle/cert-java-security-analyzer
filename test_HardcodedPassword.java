@@ -1,0 +1,1 @@
+public class HardcodedPassword { public static void main(String[] args){ String password="EXAMPLE_ONLY_NOT_A_REAL_PASSWORD"; System.out.println(password); }}
