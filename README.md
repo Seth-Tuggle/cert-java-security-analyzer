@@ -23,5 +23,3 @@ context from the whole loaded knowledge base rather than retrieving top-k vector
 matches. It is a knowledge-grounded prototype, not a sound/static compliance
 checker. Findings require human review. Any hardcoded password in the tiny
 vulnerability example is deliberately a fake example, not a working credential.
-
-See `RECOVERY_NOTES.md` for snapshot provenance.
