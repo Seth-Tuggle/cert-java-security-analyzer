@@ -1,25 +1,36 @@
 # CERT Java Security Analyzer
 
-A CS645 prototype that collects referenced CERT Java secure coding rules and
-uses that knowledge as context for LLM-assisted review of Java source. Example
-Java files illustrate format injection, hardcoded passwords, and resource handling.
+My CS645 prototype uses CERT Java secure coding rules as context for AI-assisted
+code review. I use the included Java examples to explore issues such as format
+injection, hardcoded passwords, and resource handling.
 
 ## Setup
 
-Install `requirements.txt`, then set your own `OPENAI_API_KEY` (or use a local
-`.env` file). Run `python setup_rag_system.py` to fetch the referenced rules and
-build the local knowledge base; this uses network access and a paid embedding API.
-Then run `python analyze_java_code.py` for the interactive analyzer.
+Install `requirements.txt`, then set your own `OPENAI_API_KEY` in the environment
+or a local `.env` file.
 
-The retrieved standards and indices are generated locally and excluded from
-version control. Rule identifiers and source URLs are retained in `CodingRules.txt`.
-CERT standards belong to their respective authors; this repository does not
-relicense them. No external API was called during recovery.
+```bash
+python setup_rag_system.py
+python analyze_java_code.py
+```
 
-## Implementation scope
+The setup script fetches the referenced rules and builds a local knowledge base.
+It needs network access and uses a paid embedding API. The second command starts
+the interactive analyzer, which also uses your API account for code review.
 
-Although the setup script builds embeddings, the analyzer currently assembles
-context from the whole loaded knowledge base rather than retrieving top-k vector
-matches. It is a knowledge-grounded prototype, not a sound/static compliance
-checker. Findings require human review. Any hardcoded password in the tiny
-vulnerability example is deliberately a fake example, not a working credential.
+I keep the generated knowledge base and indices out of version control.
+`CodingRules.txt` contains the rule identifiers and source URLs.
+
+## Current limitations
+
+The setup script builds embeddings, but the analyzer currently supplies context
+from the whole loaded knowledge base instead of retrieving the closest vector
+matches. I treat its findings as suggestions to review, not proof that code is
+secure or compliant.
+
+The hardcoded password in the small vulnerability example is deliberately fake;
+it isn't a working credential.
+
+## Ownership
+
+For details about my contributions and project attribution, see [CREDITS.md](CREDITS.md).
